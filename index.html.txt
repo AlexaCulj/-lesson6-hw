@@ -1,51 +1,52 @@
 <html>
 <head>
-<title>Creating HTML FORMS</title>
+<title>Form</title>
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 <h1>
-    Creating HTML FORMS sign in
+   Please fill the form
 </h1>
 
 <form action="https://su-sign-in.free.beeceptor.com" method="POST">
-    <label for="Your Name (required)">Your Name*</label>
+    <label for="Your Name ">Your Name (required) </label>
     <input type="text" name="Your Name" id="Your Name">
     
-    <label for="Your Email (required)">Your Email*</label>
+    <label for="Your Email (required)">Your Email(required)</label>
     <input type="text" name="Your Email" id="Your Email">
 
     <fieldset>
         <legend>What this all about?</legend>
 
         <div>
-                <label for="Saly Hello">Say Hello</label>
-                <input type="radio" name="answer" value="Say Hello" id="Say Hello" />
+                <label for="Say Hello">Say Hello</label>
+                <input type="checkbox" name="answer" value="Say Hello" id="Say Hello"checked />
         </div>
         
         <div>
                 <label for="Complain">Complain</label>
-           <input type="radio" name="answer" value="complain" id="complain" />
+           <input type="checkbox" input type="radio"name="answer" value="complain" id="complain"checked />
         </div>
 
         <div>
                 <label for="Share a joke">Share a joke</label>
-                <input type="radio"  name="answer" value="Share a joke" id="Share a joke" checked />
+                <input type="checkbox" name="answer" value="Share a joke" id="Share a joke"cheked />
         </div>               
     </fieldset>
 
-     <label for="Subjectt">Subject</label>
-    <select name="region" id="country">
-        <option value="default">Select country</option>
-        <option value="MD">Moldova</option>
-        <option value="USA" selected>United states of America</option>
+     <label for="Subject">Subject</label>
+    <select name="please select" id="placeholder">
+        <option value="default">Please select</option>
+        <option value="managers">manager</option>
+        <option value="service" selected>service</option>
+        <option value="products">manager</option>
+        <option value="device" selected>device</option>
     </select>
 
-     <label for="Yout message">ComYout messagements</label>
-    <textarea name="Yout message" id="Yout message">
-        Please add your comments
+     <label for="Your message">Your Message</label>
+    <textarea name="Your message" id="Your message">
     </textarea>
 
     <input type="SEND" value="SEND">
