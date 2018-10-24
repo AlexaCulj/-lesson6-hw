@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Creating HTML FORMS</title>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>
+    Creating HTML FORMS sign in
+</h1>
+
+<form action="https://su-sign-in.free.beeceptor.com" method="POST">
+    <label for="Your Name (required)">Your Name*</label>
+    <input type="text" name="Your Name" id="Your Name">
+    
+    <label for="Your Email (required)">Your Email*</label>
+    <input type="text" name="Your Email" id="Your Email">
+
+    <fieldset>
+        <legend>What this all about?</legend>
+
+        <div>
+                <label for="Saly Hello">Say Hello</label>
+                <input type="radio" name="answer" value="Say Hello" id="Say Hello" />
+        </div>
+        
+        <div>
+                <label for="Complain">Complain</label>
+           <input type="radio" name="answer" value="complain" id="complain" />
+        </div>
+
+        <div>
+                <label for="Share a joke">Share a joke</label>
+                <input type="radio"  name="answer" value="Share a joke" id="Share a joke" checked />
+        </div>               
+    </fieldset>
+
+     <label for="Subjectt">Subject</label>
+    <select name="region" id="country">
+        <option value="default">Select country</option>
+        <option value="MD">Moldova</option>
+        <option value="USA" selected>United states of America</option>
+    </select>
+
+     <label for="Yout message">ComYout messagements</label>
+    <textarea name="Yout message" id="Yout message">
+        Please add your comments
+    </textarea>
+
+    <input type="SEND" value="SEND">
+</form>
+</body>
+</html>
